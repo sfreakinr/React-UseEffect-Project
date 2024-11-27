@@ -1,78 +1,80 @@
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f9;
-    color: #333;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+  background-color: #f8f9fa;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+
+.headline {
+  font-size: 2rem;
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+
+.dropdown-container {
+  margin-bottom: 30px;
+}
+
+.dropdown-label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.dropdown {
+  padding: 8px 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+
+.list-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+
+.list-item {
+  background: #fff;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  padding: 20px;
+  width: 30%;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.list-item h4 {
+  margin: 0 0 10px;
+  color: #007bff;
+}
+
+.list-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+@media (max-width: 768px) {
+  .list-item {
+    width: 45%; 
   }
-  
-  .container {
-    background: #ffffff;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    padding: 20px;
-    width: 90%;
-    max-width: 600px;
-    text-align: center;
+}
+
+@media (max-width: 576px) {
+  .list-item {
+    width: 100%; 
   }
-  
-  h1 {
-    color: #4a90e2;
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-  
-  label {
-    font-weight: bold;
-    color: #555;
-  }
-  
-  select {
-    padding: 10px;
-    font-size: 14px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    outline: none;
-    margin: 10px 0;
-    cursor: pointer;
-    background-color: #f9f9f9;
-    transition: border-color 0.3s;
-  }
-  
-  select:focus {
-    border-color: #4a90e2;
-  }
-  
-  ul {
-    list-style: none;
-    padding: 0;
-    margin: 20px 0;
-  }
-  
-  li {
-    background: #f4f4f9;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 10px 15px;
-    margin-bottom: 10px;
-    font-size: 14px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    transition: background 0.3s, box-shadow 0.3s;
-  }
-  
-  li:hover {
-    background: #eaf4fc;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  li span {
-    font-weight: bold;
-    color: #4a90e2;
-  }
-  
+}
