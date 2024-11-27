@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import "./RickAndMorty.css";
+import "./rickAndMorty.css";
 
 const RickAndMorty = () => {
   const [dataType, setDataType] = useState("character");
